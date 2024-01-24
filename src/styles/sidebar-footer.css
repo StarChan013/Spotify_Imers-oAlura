@@ -1,5 +1,6 @@
 body {
     background-color: #000;
+    font-family: var(--font-dm-sans);
 }
 
 .sidebar {
@@ -9,7 +10,6 @@ body {
     bottom: 0;
     padding: 12px;
     width: 300px;
-    font-family: "DM Sans", sans-serif;
 }
 
 .sidebar__navigation {

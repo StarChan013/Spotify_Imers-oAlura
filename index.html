@@ -4,8 +4,10 @@
     <meta charset="UTF-8"> <!--Tipo de decodificação-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotify(Imersão - Alura)</title> <!--Título da página que aparece na aba-->
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css"> <!--Cria link com o arquivo Style.css-->
+    <link rel="stylesheet" href="./src/styles/reset.css">
+    <link rel="stylesheet" href="./src/styles/vars.css">
+    <link rel="stylesheet" href="./src/styles/sidebar-footer.css"> <!--Cria link com o arquivo Style.css-->
+    <link rel="stylesheet" href="./src/styles/main-content.css">
     <script src="https://kit.fontawesome.com/168d398c74.js" crossorigin="anonymous"></script>
 </head>
 
@@ -14,7 +16,7 @@
         <nav class="sidebar__navigation">
           <div class="logo">
             <a href="">
-              <img src="./assets/icons/logo-spotify.png" alt="Logo" />
+              <img src="./src/assets/icons/logo-spotify.png" alt="Logo" />
             </a>
           </div>
           <ul>
@@ -63,8 +65,30 @@
               </button>
             </div>
         </div>
-        
     </div>
+
+    <main>
+      <div class="main-container">
+          <nav class="header__navigation">
+              <div class="navigation">
+                  <button class="arrow-left">
+                      <img src="./src/assets/icons/small-left.png" alt="Seta esquerda">
+                  </button>
+                  <button class="arrow-right">
+                      <img src="./src/assets/icons/small-right.png" alt="Seta direita">
+                  </button>
+              </div>
+              <div class="header__search">
+                  <img src="./src/assets/icons/search.png" alt="">
+                  <input id="search-input" type="text" maxlength="800" placeholder="O que você quer ouvir?" />
+              </div>
+              <div class="header__login">
+                  <button class="subscribe">Inscreva-se</button>
+                  <button class="login">Entrar</button>
+              </div>
+          </nav>
+      </div>
+  </main>
 </body>
 
 </html>
